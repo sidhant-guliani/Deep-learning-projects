@@ -1,4 +1,6 @@
 Keras tutorial
+
+
 ----> Open database (classifying white/red wine based on chemical properties)
 ---> steps: Data manipulation + data modeling
 Processing data:  Split up your data in train and test sets and standardize the data,
