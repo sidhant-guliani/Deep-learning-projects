@@ -14,6 +14,9 @@ Number | Technique
 4 | Adding dropout.
 
 See the figure below to understand the effect og regularization over 
+
+![GitHub Logo](/images/regularization_methods.png)
+
 ![alt text](https://https://github.com/sidhant-guliani/Deep-learning-projects/tree/master/images/regularization_methods.png)
 
 Open database (classifying white/red wine based on chemical properties)
