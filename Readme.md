@@ -47,7 +47,8 @@ here we are going to discuss about the 'regression', which consists of predictin
 
 Here we are going to work on a different approach called K-fold validation. In this the avaliable data is split into K partitions(k=4 or k=5), then instantiating k identical models and training each one on k-1 partiitions while evaluating in reamaining partition.
 
-
+![](/images/k-fold_cross_validation.png)
+![](/images/k-fold_cross_validation2.png)
 Summary:
 #### Using K-fold approach
 One way we saw in earlier notebook to find overfitting and underfitting was looking at the validation/training loss and accuracy and then adjusting the epochs based on that. We could split the data in training and validation set but whn we have fewer data points then the validation set is very small. the onsequence is that the validation scores may change a lot depending on what data points did we chose to use for validation. THE VALIDATION SCORE MIGHT HAVE LARGE VARIATION with regard to validaition split. so we cant rely on that.
