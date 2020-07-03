@@ -13,7 +13,6 @@ Number | Technique
 3 | Adding weight regularization.
 4 | Adding dropout.
 
-See the figure below to understand the effect og regularization over 
 ![Here we can see that that the smaller network starts overfitting later than the reference one (original) and its performace degrades slowly compareed to the original one.](/images/regularization1.png)
 
 Adding weight regularization
@@ -23,8 +22,11 @@ The simpler the model, better it is. One way to avoid overfitting is to put cont
         2. L2 regularization: where the cost added is proportional to the square of the value of the weights 
                                 coefficients (weight decay)
 ![We can see that the model is workign fine here wit l2 regularization. The model is more resistant to overfitting than the reference model (original).](/images/regularization2.png)
+We can see that the model is workign fine here wit l2 regularization. The model is more resistant to overfitting than the reference model (original).
+
 ![comparing all the regularization methods with the original model without regularization](/images/regularization_methods.png)
 
+In the figure above, comparing all the regularization methods with the original model without regularization.
 
 Open database (classifying white/red wine based on chemical properties)
 ---> steps: Data manipulation + data modeling
