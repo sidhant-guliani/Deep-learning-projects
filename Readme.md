@@ -49,23 +49,24 @@ Here we are going to work on a different approach called K-fold validation. In t
 
 ![](/images/k-fold_cross_validation.png)
 ![](/images/k-fold_cross_validation2.png)
+
 Summary:
 #### Using K-fold approach
 One way we saw in earlier notebook to find overfitting and underfitting was looking at the validation/training loss and accuracy and then adjusting the epochs based on that. We could split the data in training and validation set but whn we have fewer data points then the validation set is very small. the onsequence is that the validation scores may change a lot depending on what data points did we chose to use for validation. THE VALIDATION SCORE MIGHT HAVE LARGE VARIATION with regard to validaition split. so we cant rely on that.
 
-Open database (classifying white/red wine based on chemical properties)
----> steps: Data manipulation + data modeling
 
 
-Processing data:  Split up your data in train and test sets and standardize the data,
+### Keras example notebook
+question: can you predict whether a wine is red or white by looking at its chemical properties? Open database (classifying white/red wine based on chemical properties)
+The accuracy acieved by the model is:accuracy: 0.9984. Steps to classify the winne base don the features provided:-
+1. Processing data:  Split up your data in train and test sets and standardize the data,
+2. Build multi-layer perceptrons for classification tasks,
+3. Compile and fit the data to the models,
+4. Use the model to predict target values, and
+5. Validate the model.
+6. Bonus: Build a model for regression tasks, and fine-tune the model that we built.
 
-Build multi-layer perceptrons for classification tasks,
+![](/images/wine_model_correlation_matrix.png)
+Following are the features in dataset:
+fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar','chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality', 'type'
 
-Compile and fit the data to the models,
-
-Use the model to predict target values, and
-
-Validate the model.
-
-Bonus: Build a model for regression tasks, and fine-tune the model that we built.
- 
