@@ -14,10 +14,17 @@ Number | Technique
 4 | Adding dropout.
 
 See the figure below to understand the effect og regularization over 
+![Here we can see that that the smaller network starts overfitting later than the reference one (original) and its performace degrades slowly compareed to the original one.](/images/regularization1.png)
 
-![GitHub Logo](/images/regularization_methods.png)
+Adding weight regularization
+The simpler the model, better it is. One way to avoid overfitting is to put contraints on the complexity of a network by forcing its weights to take only smaller values, whcih makes the diftribution of weights more regular. and this is done by adding to the loss function the cost associated with having large weights. the cost come in two flavours:
 
-![alt text](https://https://github.com/sidhant-guliani/Deep-learning-projects/tree/master/images/regularization_methods.png)
+        1. L1 regularization:here the cost added is proportional to the absolute value of the weights coefficients 
+        2. L2 regularization: where the cost added is proportional to the square of the value of the weights 
+                                coefficients (weight decay)
+![We can see that the model is workign fine here wit l2 regularization. The model is more resistant to overfitting than the reference model (original).](/images/regularization2.png)
+![comparing all the regularization methods with the original model without regularization](/images/regularization_methods.png)
+
 
 Open database (classifying white/red wine based on chemical properties)
 ---> steps: Data manipulation + data modeling
