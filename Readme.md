@@ -15,6 +15,8 @@ Number | Technique
 
 ![Here we can see that that the smaller network starts overfitting later than the reference one (original) and its performace degrades slowly compareed to the original one.](/images/regularization1.png)
 
+Here we can see that that the smaller network starts overfitting later than the reference one (original) and its performace degrades slowly compareed to the original one.
+
 Adding weight regularization
 The simpler the model, better it is. One way to avoid overfitting is to put contraints on the complexity of a network by forcing its weights to take only smaller values, whcih makes the diftribution of weights more regular. and this is done by adding to the loss function the cost associated with having large weights. the cost come in two flavours:
 
@@ -22,11 +24,34 @@ The simpler the model, better it is. One way to avoid overfitting is to put cont
         2. L2 regularization: where the cost added is proportional to the square of the value of the weights 
                                 coefficients (weight decay)
 ![We can see that the model is workign fine here wit l2 regularization. The model is more resistant to overfitting than the reference model (original).](/images/regularization2.png)
+
 We can see that the model is workign fine here wit l2 regularization. The model is more resistant to overfitting than the reference model (original).
 
 ![comparing all the regularization methods with the original model without regularization](/images/regularization_methods.png)
 
 In the figure above, comparing all the regularization methods with the original model without regularization.
+
+### 2-Predicting_house_prices.ipynb
+here we are going to discuss about the 'regression', which consists of predicting continuous values instead of discrete labels.We are going to use the Boston housing Price dataset. The feaures present in the dataset:-
+
+1. Per capita crime rate. 
+2. Proportion of residential land zoned for lots over 25,000 square feet. 
+3. Proportion of non-retail business acres per town. 
+4. Charles River dummy variable (= 1 if tract bounds river; 0 otherwise). 
+5. Nitric oxides concentration (parts per 10 million). 
+6. Average number of rooms per dwelling. Proportion of owner-occupied units built prior to 1940. 
+7. Weighted distances to five Boston employment centres. 
+8. Index of accessibility to radial highways. 
+9. Full-value property-tax rate per $10,000. 
+10. Pupil-teacher ratio by town. 1000 * (Bk - 0.63) ** 2 where Bk is the proportion of Black people by town. lower status of the population.
+
+
+
+Summary:
+Using K-fold approach
+One way we saw in earlier notebook to find overfitting anf underfittig was looking at the validation/training loss and accuracy and then adjusting the epochs based on that. We could split the data in training and validation set but whn we have fewer data points then the validation set is very small. the onsequence is that the validation scores may change a lot depending on what data points did we chose to use for validation. THE VALIDATION SCORE MIGHT HAVE LARGE VARIATION with regard to validaition split. so we cant rely on that.
+
+Here we are going to work on a different approach called K-fold validation. In this the avaliable data is split into K partitions(k=4 or k=5), then instantiating k identical models and training each one on k-1 partiitions while evaluating in reamaining partition.
 
 Open database (classifying white/red wine based on chemical properties)
 ---> steps: Data manipulation + data modeling
