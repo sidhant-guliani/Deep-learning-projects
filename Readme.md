@@ -58,7 +58,11 @@ One way we saw in earlier notebook to find overfitting and underfitting was look
 
 ### Keras example notebook
 question: can you predict whether a wine is red or white by looking at its chemical properties? Open database (classifying white/red wine based on chemical properties)
-The accuracy acieved by the model is:accuracy: 0.9984. Steps to classify the winne base don the features provided:-
+The accuracy acieved by the model is:accuracy: 0.9984. 
+Following are the features in dataset:
+fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar','chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality', 'type'
+
+Steps to classify the winne base don the features provided:-
 1. Processing data:  Split up your data in train and test sets and standardize the data,
 2. Build multi-layer perceptrons for classification tasks,
 3. Compile and fit the data to the models,
@@ -67,6 +71,5 @@ The accuracy acieved by the model is:accuracy: 0.9984. Steps to classify the win
 6. Bonus: Build a model for regression tasks, and fine-tune the model that we built.
 
 ![](/images/wine_model_correlation_matrix.png)
-Following are the features in dataset:
-fixed acidity', 'volatile acidity', 'citric acid', 'residual sugar','chlorides', 'free sulfur dioxide', 'total sulfur dioxide', 'density', 'pH', 'sulphates', 'alcohol', 'quality', 'type'
+
 
